@@ -4,7 +4,7 @@ public class RunVisitor {
 	
 	public static void main(String[] args){
 		TextElement textElement1 = new TextElement("First item");
-		TextElement textElement2 = new TextElement("Second element");
+		TextElement textElement2 = new TextElement("Second element", TextStyle.BOLD);
 		ElementList list = new ElementList(textElement1, textElement2);
 		
 		System.out.println("TextFileVisitor output: \n");

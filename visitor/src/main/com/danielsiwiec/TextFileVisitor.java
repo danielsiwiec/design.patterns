@@ -15,7 +15,8 @@ public class TextFileVisitor implements DocumentElementVisitor{
 
 	@Override
 	public void visit(TextElement textElement) {
-		builder.append(textElement.getText());
+		builder.append(textElement.getStyle() == TextStyle.BOLD ? 
+				textElement.getText().toUpperCase() : textElement.getText());
 	}
 
 	@Override

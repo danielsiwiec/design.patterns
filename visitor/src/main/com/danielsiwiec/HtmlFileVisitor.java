@@ -17,7 +17,10 @@ public class HtmlFileVisitor implements DocumentElementVisitor{
 
 	@Override
 	public void visit(TextElement textElement) {
+		boolean isBold = textElement.getStyle() == TextStyle.BOLD;
+		if (isBold) builder.append("<b>");
 		builder.append(textElement.getText());
+		if (isBold) builder.append("</b>");
 	}
 
 	@Override
