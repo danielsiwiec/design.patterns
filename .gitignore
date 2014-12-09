@@ -11,3 +11,7 @@
 .project
 .settings
 .bin
+
+# Idea #
+.idea
+*.iml
