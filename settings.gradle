@@ -1,1 +1,1 @@
-include 'builder', 'observer', 'strategy', 'visitor'
+include 'builder', 'observer', 'strategy', 'visitor', 'chain-of-responsibility'
